@@ -1,296 +1,197 @@
 <!DOCTYPE html>
-<html>
-  <head>
-
-    
-    <img src="WebBanner.png" alt="Banner" width="900" height="300"> 
-      <h1><b>ENG0018 Computer Laboratory 2024/2025 </b></h1>
-      <h2>Student URN: 6898511</h2>
-    <hr>
-    <h2 style="font-family:calibri;"><b>Graphene: The Secret Sauce for your battery</b></h2>
-    <hr>
-
-    
-    <!style for tables>
-      <style>
-        table {
-          font-family: arial, sans-serif;
-          boarder-collapse: collapse;
-          width: 30%;
-        }
-        td, th {
-            boarder: 1px solid #6bfff8;
-            text-align: left; 
-            padding: 8px;
-          }
-
-          tr:nth-child(even) {
-            background-color: #FFFFFF;
-          }
-      </style>
-      
-
-  <!table of contents>
-    <table>
-      <tr>
-        <th><h3>Table of contents</h3></th>
-      </tr>
-      <tr>
-        <td><a href="#Abstract">Abstract</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#Introduction:">Introduction</td>
-      </tr>
-      <tr>
-        <td><a href="#What is graphene and its brief history:">What is graphene and its brief history</td>
-      </tr>
-      <tr>
-        <td><a href="#Why does the word graphene sound familiar?:">Why does the word graphene sound familiar?</td>
-      </tr>
-      <tr>
-        <td><a href="#How does graphene affect batteries?:">How does graphene affect batteries?</td>
-      </tr>
-      <tr>
-        <td><a href="#How to add graphene to batteries:">How to add graphene to batteries</td>
-      </tr>
-      <tr>
-        <td><a href="#The use cases:">The use cases</td>
-      </tr>
-      <tr>
-        <td><a href="#Compairing Alkaline, Lithium and Graphene batteries">Table 1</td>
-      </tr>
-      <tr>
-        <td><a href="#In the Future:">In the Future</td>
-      </tr>
-      <tr>
-        <td><a href="#Battery evolution graph:">Figure 1</td>
-      </tr>
-      <tr>
-        <td><a href="#Conclusion and My Passion:">Conclusion and My Passion</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#References:">References</td>
-      </tr>
-      <tr>
-        <td><a href="#Presentation:">Presentation</td>
-      </tr>
-    </table>
-    
-    
-    <style>
-  p.ex1 {
-    margin-left: 250px;
-  }
-    </style>
-
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Graphene: The Secret Sauce for your batteries</title>
     <style>
-    .mySlides {display:none;}
-    </style>  
-    <body style="background-color:#6bffc7:margin-left:50px;">
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6bffc7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 600px;
+        }
+        th, td {
+            border: 1px solid #6bfff8;
+            text-align: left;
+            padding: 10px;
+        }
+        th {
+            background-color: #e0f7fa;
+        }
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+        section {
+            padding: 20px;
+            margin: auto;
+            max-width: 800px;
+            text-align: justify;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e0f7fa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="WebBanner.png" alt="Banner">
+        <h1>ENG0018 Computer Laboratory 2024/2025</h1>
+        <h2>Student URN: 6898511</h2>
+        <hr>
+        <h2>Graphene: The Secret Sauce for your Battery</h2>
+        <hr>
+    </header>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Table of Contents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><a href="#abstract">Abstract</a></td></tr>
+                <tr><td><a href="#introduction">Introduction</a></td></tr>
+                <tr><td><a href="#graphene-history">Graphene and Its History</a></td></tr>
+                <tr><td><a href="#why-familiar">Why Graphene Sounds Familiar</a></td></tr>
+                <tr><td><a href="#battery-effects">How Graphene Affects Batteries</a></td></tr>
+                <tr><td><a href="#adding-graphene">How to Add Graphene to Batteries</a></td></tr>
+                <tr><td><a href="#use-cases">The use cases</a></td></tr>
+		<tr><td><a href="#table1">Compairing Alkaline, Lithium and Graphene batteries:">Compairing Alkaline, Lithium and Graphene batteries</a></td></tr>
+                <tr><td><a href="#future">In the Future</a></td></tr>
+		<tr><td><a href="#figure1">Battery evolution graph</a></td></tr>
+                <tr><td><a href="#conclusion">Conclusion and My Passion</a></td></tr>
+                <tr><td><a href="#references">References</a></td></tr>
+		<tr><td><a href="#presentation">Presentation</a></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="abstract">
+        <h3>Abstract</h3>
+        <p>Graphene is an awesome material that increases the capacity, thermals, lifespan and efficiency of a battery. Having only been synthesised recently, this carbon substance brings promises of revolution to technology, such as increases in battery capacity, thermals, lifespan and efficiency. In the near future, this material could become as abundant as plastic. This study presents research and finding from esteemed sources to confirm these ideas and by the end, you will have a strong understanding of howthis substance intertwines with your device and your future.</p>
+    </section>
+
+    <section id="introduction">
+        <h3>Introduction</h3>
+        <p>TThe future of batteries begins now! Graphene is a substance with incredible properties, which this article hopes to bring light to, along with the ways they are going to affect you. Yes, YOU! I aim to demonstrate to you all the benefits that come aboutwith this revolution, bringing in professionally tested examples and linking how its functions link to the industries requirements. Furthermore, I will describe the history and future of graphene's role in batteries. By the end of this article, youshould have a strong understanding of Graphene's purpose in batteries, the science behind it and what you can do to reap the benefits of this generous material.</p>
+    </section>
     
+	<section id="graphene-history">
+        <h3>Graphene and Its History</h3>
+        <p>Graphene is made of carbon, and is extracted from graphite. It was first theorised in 1947 and was first discovered through isolation in 2003 at the University of Manchester, by Kostya Novoselov and Andre Geim (Science and industry museum, 2021). A sheetof graphene is the thinnest material possible, with it being only 1 atom thick, yet over 200x stronger than steel. This gives it uses in departments of military, health, transport and more (University of Manchester, No date). It's thinness makes it quitefloppy, and while it can be used on a substrate (Clegg, 2018, pg 79) (a material that adds structural support, yet doesn't interfere properties-wise), it could also be shaped and moulded into specific objects. Nifty!</p>
+    </section>
 
+    <section id="why-familiar">
+        <h3>Why Graphene Sounds Familiar/h3>
+        <p>Because you've likely heard of its big brother graphite, used to make pencils. Graphite is made up of hundreds of thousands of layers of graphene (Zurutuza, No date). This is why graphene was discovered, not invented, as graphite is a naturally occurring mineral, therefore making graphene also naturally occurring.</p>
+    </section>
 
-      <p class="ex1">
-      <pre>
-        <h3 id="Abstract:">Abstract:</h3>
-        Graphene is an awesome material that increases the capacity, thermals, lifespan and efficiency of a battery. Having only been synthesised recently, this carbon substance brings promises of revolution to technology, such as increases in battery capacity, thermals, lifespan and efficiency. In the near future, this material could become as abundant as plastic. This study presents research and finding from esteemed sources to confirm these ideas and by the end, you will have a strong understanding of how 
-	this substance intertwines with your device and your future. 
-      </pre>
-    </p>
-      
-      <p class="ex1">
-      <pre>
-        <h3 id="Introduction:">Introduction:</h3>
-        The future of batteries begins now! Graphene is a substance with incredible properties, which this article hopes to bring light to, along with the ways they are going to affect you. Yes, YOU! I aim to demonstrate to you all the benefits that come about
-	with this revolution, bringing in professionally tested examples and linking how its functions link to the industries requirements. Furthermore, I will describe the history and future of graphene's role in batteries. By the end of this article, you 
-	should have a strong understanding of Graphene's purpose in batteries, the science behind it and what you can do to reap the benefits of this generous material.
-      </pre>
-      </p>
-	    
-      <p class="ex1">
-      <pre>
-        <h3 id="What is graphene and its brief history:">What is graphene and its brief history:</h3>
-        Graphene is made of carbon, and is extracted from graphite. It was first theorised in 1947 and was first discovered through isolation in 2003 at the University of Manchester, by Kostya Novoselov and Andre Geim (Science and industry museum, 2021). A sheet 
-	of graphene is the thinnest material possible, with it being only 1 atom thick, yet over 200x stronger than steel. This gives it uses in departments of military, health, transport and more (University of Manchester, No date). It's thinness makes it quite 
-	floppy, and while it can be used on a substrate (Clegg, 2018, pg 79) (a material that adds structural support, yet doesn't interfere properties-wise), it could also be shaped and moulded into specific objects. Nifty!
-      </pre>
-	</p>
+    <section id="battery-effects">
+        <h3>How Graphene Affects Batteries</h3>
+        <p>Today, the battery is our mobile devices' most valuable resource, with all components having to fight over the little amount given to your electronics. So a substance that improves your devices battery entirely affects the device and how you use it. Graphene is one of these substances. It is highly conductive, which makes it an excellent candidate in improving battery performance (as battery performance is proportional to conductivity of its makeup). Graphene is lighter than lithium(JamesHartChorley, 2021), on average 30% (Rupareliya, 2023), so implementations bring weight reductions to the batteries and the portable devices they sit in. This translates to real world benefits: Productivity would increase on laptops whose powercells didn’t depend on your proximity to an outlet. Long haul flights would be less mentally taxing if you knew that your mobile would last you through the journey. It might sound obvious but it pays off to have a better battery, especially when its longevity makes it an afterthought when using it. </p>
+    </section>
 
-      <p class="ex1">
-      <pre>
-        <h3 id="Why does the word graphene sound familiar?:">Why does the word graphene sound familiar?:</h3>
-        Because you've likely heard of its big brother graphite, used to make pencils. Graphite is made up of hundreds of thousands of layers of graphene (Zurutuza, No date). This is why graphene was discovered, not invented, as graphite is a naturally occurring 
-	mineral, therefore making graphene also naturally occurring. 
-      </pre>
-</p>
-	    
-      <p class="ex1">
-      <pre>
-        <h3 id="How does graphene affect batteries?:">How does graphene affect batteries?:</h3>
-        Today, the battery is our mobile devices' most valuable resource, with all components having to fight over the little amount given to your electronics. So a substance that improves your devices battery entirely affects the device and how you use it. 
-	Graphene is one of these substances. It is highly conductive, which makes it an excellent candidate in improving battery performance (as battery performance is proportional to conductivity of its makeup). Graphene is lighter than lithium 
-	(JamesHartChorley, 2021), on average 30% (Rupareliya, 2023), so implementations bring weight reductions to the batteries and the portable devices they sit in. This translates to real world benefits: Productivity would increase on laptops whose power 
-	cells didn’t depend on your proximity to an outlet. Long haul flights would be less mentally taxing if you knew that your mobile would last you through the journey. It might sound obvious but it pays off to have a better battery, especially when its 
-	longevity makes it an afterthought when using it. 
-      </pre>
-</p>
-	    
-      <p class="ex1">
-      <pre>
-        <h3 id="How to add graphene to batteries:">How to add graphene to batteries:</h3>
-        Graphene can be added to a battery in many ways. These include being: 
+    <section id="adding-graphene">
+        <h3>How to Add Graphene to Batteries</h3>
+        <p>Graphene can be added to a battery in many ways. These include being: 
 		• Mixed with lithium to create graphene enhanced Li-Ion batteries
 		• Fixed to the conductive end of traditional Li-Ion cells to increase conductivity
 		• Separately refined into solid state batteries
-        	• Installed around the outside of a battery to act as a heatsink
-      </pre>
-</p>
-	    
-      <p class="ex1">
-      <pre>
-        <h3 id="The use cases:">The use cases:</h3>
-        The 3 major battery benefits bestowed by graphene are:
+        	• Installed around the outside of a battery to act as a heatsink </p>
+    </section>
+	
+    <section id="use-cases">
+        <h3>The use cases</h3>
+        <p>The 3 major battery benefits bestowed by graphene are:
 		• Charging speed increases - The very high electrical conductivity of graphene boosts the density of the electrode within the battery, enabling greater power transfer and faster charging speeds with reduced heat. (Dam, 2022)
 		• Thermal pad and absorption of dissipated heat - Graphene helps spreading heat across a heatsink at rapid speeds, diminishing effects of battery expansion (ScienceDirect, 2024)
-        	• Battery longevity - Graphene batteries have been reported to last about 5 times longer than traditional Lithium-ion batteries (Baker, No date)
-      </pre>
-</p>
-	    
-      <p class="ex1">
-      <pre>
-        <h3 id="Compairing Alkaline, Lithium and Graphene batteries:">Compairing Alkaline, Lithium and Graphene batteries:</h3>
-        
-      </pre>
-      </p>
-	    
-      <p class="ex1">
-      <pre>
-        <h3 id="In the future:">In the future:</h3>
-        Graphene batteries currently suffer from a lower charge capacity when compared to Li-Ion batteries, while being costly. This is why they haven't hit mass production in companies like Tesla, whose electric cars are infamous for having slow charging speeds 
-	with low mileage (Sirull, 2024). Future tech devices that rely might see a reduction in thickness, especially when considering the benefits compound effects. The media presents graphene as having no drawbacks. This is misleading; graphene is today what 
-	plastic was, when it was first synthesised. Plastic was originally considered a wonder material without any compromises, which today we know is not true, proven by the existence of plastic pollution. (Clegg, 2018)
-      </pre>
-</p>
-	    
-      <p class="ex1">
-      <pre>
-        <h3 id="Battery evolution graph:">Battery evolution graph:</h3>
-        
-      </pre>
-</p>
-	    
-      <p class="ex1">
-      <pre>
-        <h3 id="Conclusion and My Passion:">Conclusion and My Passion:</h3>
-        In a world where technological development from big companies, an example being Apple (Duffy 2024), seems to have halted, it is always an amazing sight to see the next big thing unravel in front of our very own eyes. I hope this article helps inspire you
-	to find great ideas to help push our society forward. 
-      </pre>
-      </p>
+        	• Battery longevity - Graphene batteries have been reported to last about 5 times longer than traditional Lithium-ion batteries (Baker, No date)</p>
+    </section>
+	
+    <section id="Table1">
+        <h3>Compairing Alkaline, Lithium and Graphene batteries:">Compairing Alkaline, Lithium and Graphene batteries</h3>
+        <p></p>
+    </section>
+	
+    <section id="future">
+        <h3>In the Future</h3>
+        <p> Graphene batteries currently suffer from a lower charge capacity when compared to Li-Ion batteries, while being costly. This is why they haven't hit mass production in companies like Tesla, whose electric cars are infamous for having slow charging speedswith low mileage (Sirull, 2024). Future tech devices that rely might see a reduction in thickness, especially when considering the benefits compound effects. The media presents graphene as having no drawbacks. This is misleading; graphene is today whatplastic was, when it was first synthesised. Plastic was originally considered a wonder material without any compromises, which today we know is not true, proven by the existence of plastic pollution. (Clegg, 2018)</p>
+    </section>
 
-      
-      <p class="ex1">
-      <pre>
-        <h3 id="References:">References:</h3>
-        REFERENCES REFERENCES REFERENCES REFERENCES REFERENCES
-        REFERENCES REFERENCES REFERENCES REFERENCES REFERENCES
-        REFERENCES REFERENCES REFERENCES REFERENCES REFERENCES
-        REFERENCES REFERENCES REFERENCES REFERENCES REFERENCES
-      </pre>
-      </p>
-	    
-      <p class="ex1">
-      <pre>
-        <h3 id="Presentation:">Presentation:</h3>
-        
-      </pre>
-	</p>
+    <section id="figure1">
+        <h3>Battery evolution graph/h3>
+        <p></p>
+    </section>
+	
+    <section id="conclusion">
+        <h3>Conclusion and My Passion/h3>
+        <p>In a world where technological development from big companies, an example being Apple (Duffy 2024), seems to have halted, it is always an amazing sight to see the next big thing unravel in front of our very own eyes. I hope this article helps inspire you to find great ideas to help push our society forward. </p>
+    </section>
+	
+    <section id="references">
+        <h3>References</h3>
+        <p></p>
+    </section>
+	
+    <section id="presentation">
+        <h3>Presentation</h3>
+        <p></p>
+    </section>
+	
 
-<!-- //////////////////////////////////////////////////////////////////////////////// -->
-  <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
-  <!-- //////////////////////////////////////////////////////////////////////////////// -->
-    <!-- Last commit time display -->
-<div id="last-updated">Loading last update time...</div>
-<!-- Verify Button -->
-<button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
-    Verify Last Modified Time
-</button>
-<script>
-    async function getLastUpdatedTime() {
-        const username = 'nr0025';
-        const repo = 'FY0025';
-       
-        const url = `https://api.github.com/repos/${username}/${repo}/commits`;
-        try {
-            const response = await fetch(url, {
-                method: 'GET',
-                headers: {
-                    'Accept': 'application/vnd.github.v3+json',
+    <footer>
+        <div id="last-updated">Loading last update time...</div>
+        <button onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+    </footer>
+
+    <script>
+        async function getLastUpdatedTime() {
+            const username = 'your-username'; // Replace with your username
+            const repo = 'your-repo'; // Replace with your repository
+            const url = `https://api.github.com/repos/${username}/${repo}/commits`;
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Error fetching commits');
+                const commits = await response.json();
+                if (commits.length > 0) {
+                    const lastCommitDate = new Date(commits[0].commit.committer.date);
+                    document.getElementById('last-updated').innerText = `Last Modified: ${lastCommitDate.toLocaleString()}`;
                 }
-            });
-            if (!response.ok) {
-                throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
+            } catch (error) {
+                console.error('Failed to fetch last update:', error);
+                document.getElementById('last-updated').innerText = 'Error fetching update time.';
             }
-            const commits = await response.json();
-            if (commits && commits.length > 0) {
-                const lastCommitDate = new Date(commits[0].commit.committer.date);
-               
-                // Displaying the time on load
-                document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
-            } else {
-                document.getElementById('last-updated').innerText = 'No commits found in the repository.';
-            }
-        } catch (error) {
-            console.error('Error fetching the last updated time:', error);
-            document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
         }
-    }
-    // Function to verify the last update time by re-fetching it from the API
-    async function verifyLastUpdatedTime() {
-        document.getElementById('last-updated').innerText = 'Verifying...';
-        await getLastUpdatedTime();
-        alert("Last modified time has been successfully verified from GitHub API.");
-    }
-    // Initial load to display the time on page load
-    window.onload = getLastUpdatedTime;
-</script>
 
+        async function verifyLastUpdatedTime() {
+            document.getElementById('last-updated').innerText = 'Verifying...';
+            await getLastUpdatedTime();
+            alert('Last modified time verified!');
+        }
 
- <!-- //////////////////////////////////////////////////////////////////////////////// -->
-  <!-- ////////////////////////////// Word count function ////////////////////////////// -->
-  <!-- //////////////////////////////////////////////////////////////////////////////// -->
-<!-- Placeholder for total word count -->
-<p id="totalWordCount"></p>
-<hr>
-<script>
-  // Function to calculate and display word count for a specified section
-  function displayWordCount(sectionId, outputId) {
-    // Get the text content from the specified section
-    const text = document.getElementById(sectionId).textContent;
-    // Split text into words based on spaces and filter out any empty strings
-    const wordArray = text.trim().split(/\s+/);
-    // Count the words
-    const wordCount = wordArray.length;
-    // Return the word count for summing purposes
-    return wordCount;
-  }
-  // Function to calculate and display total word count from selected sections
-  function displayTotalWordCount() {
-    // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
-    // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
-    // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-  }
-  // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
-</script>
-
-  </head>
+        window.onload = getLastUpdatedTime;
+    </script>
+</body>
 </html>
