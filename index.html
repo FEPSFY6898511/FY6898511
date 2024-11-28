@@ -246,5 +246,40 @@
 
         window.onload = getLastUpdatedTime;
     </script>
+<p id="totalWordCount"></p>
+<hr>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() {
+    // Calculate word count for each section and accumulate the total
+    const IntroductionCount = displayWordCount("#introduction");
+    const Paragraph1Count = displayWordCount("#graphene-history");
+    const Paragraph2Count = displayWordCount("#why-familiar");
+    const Paragraph3Count = displayWordCount("#battery-effects");
+    const Paragraph4Count = displayWordCount("#adding-graphene");
+    const Paragraph5Count = displayWordCount("#use-cases");
+    const Table1Count = displayWordCount("#table1");
+    const Paragraph6Count = displayWordCount("#future");
+    const Figure1Count = displayWordCount("#figure1");
+    const Paragraph7Count = displayWordCount("#conclusion");
+    // Calculate the sum of all selected sections
+    const totalWordCount = IntroductionCount + Paragraph1Count + Paragraph2Count + Paragraph3Count + Paragraph4Count + Paragraph5Count + Paragraph6Count + Paragraph7Count + Figure1Count + Table1Count;
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
+</script>
 </body>
 </html>
