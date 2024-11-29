@@ -10,7 +10,7 @@
             font-family:'SF Pro Display';
             font-style:normal;
             font-weight:100;
-            src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display.ttf") format("truetype");
+            src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_medium.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_medium.ttf") format("truetype");
             background-color: #ccffff;
             margin: 0;
             padding: 0;
@@ -97,21 +97,21 @@
     </section>
 
     <section id="introduction">
-        <p id="IntroductionCount">
+        <p id="IntroductionID">
         <h3>Introduction:</h3>
         <p>The future of batteries begins now! Graphene is a substance with incredible properties, which this article hopes to bring light to, along with the ways they are going to affect you. Yes, YOU! I aim to demonstrate to you all the benefits that come aboutwith this revolution, bringing in professionally tested examples and linking how its functions link to the industries requirements. Furthermore, I will describe the history and future of graphene's role in batteries. By the end of this article, you should have a strong understanding of graphene's purpose in batteries, the science behind it and what you can do to reap the benefits of this generous material.</p>
 	</p>
     </section>
     
     <section id="graphene-history">
-        <p id="Paragraph1Count">
+        <p id="Paragraph1ID">
         <h3>Graphene and its history:</h3>
         <p>Graphene is made of carbon, and is extracted from graphite. It was first theorised in 1947 and was first discovered through isolation in 2003 at the University of Manchester, by Kostya Novoselov and Andre Geim (Science and industry museum, 2021). A sheet of graphene is the thinnest material possible, with it being only 1 atom thick, yet over 200x stronger than steel. This gives it uses in departments of military, health, transport and more (University of Manchester, No date). It's thinness makes it quite floppy, and while it can be used on a substrate (Clegg, 2018, pg 79) (a material that adds structural support, yet doesn't interfere properties-wise), it could also be shaped and moulded into specific objects. Nifty!</p>
 	</p>
     </section>
 
     <section id="why-familiar">
-        <p id="Paragraph2Count">
+        <p id="Paragraph2ID">
         <h3>Why does the word graphene sound familiar?:</h3>
         <p>Because you've likely heard of its big brother graphite, used to make pencils. Graphite is made up of hundreds of thousands of layers of graphene (Zurutuza, No date). This is why graphene was discovered, not invented, as graphite is a naturally occurring mineral, therefore making graphene also naturally occurring.</p>
 	</p>
@@ -282,12 +282,12 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("#introduction");
-    const Paragraph1Count = displayWordCount("#graphene-history");
-    const Paragraph2Count = displayWordCount("#why-familiar");
-    const Paragraph3Count = displayWordCount("#battery-effects");
-    const Paragraph4Count = displayWordCount("#adding-graphene");
-    const Paragraph5Count = displayWordCount("#use-cases");
+    const IntroductionCount = displayWordCount("IntroductionID");
+    const Paragraph1Count = displayWordCount("Paragraph1ID");
+    const Paragraph2Count = displayWordCount("Paragraph2ID");
+    const Paragraph3Count = displayWordCount("Paragraph3ID");
+    const Paragraph4Count = displayWordCount("Paragraph4ID");
+    const Paragraph5Count = displayWordCount("use-cases");
     const Table1Count = displayWordCount("#table1");
     const Paragraph6Count = displayWordCount("#future");
     const Figure1Count = displayWordCount("#figure1");
