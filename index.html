@@ -97,10 +97,8 @@
     </section>
 
     <section id="introduction">
-        <p id="IntroductionID">
         <h3>Introduction:</h3>
         <p>The future of batteries begins now! Graphene is a substance with incredible properties, which this article hopes to bring light to, along with the ways they are going to affect you. Yes, YOU! I aim to demonstrate to you all the benefits that come aboutwith this revolution, bringing in professionally tested examples and linking how its functions link to the industries requirements. Furthermore, I will describe the history and future of graphene's role in batteries. By the end of this article, you should have a strong understanding of graphene's purpose in batteries, the science behind it and what you can do to reap the benefits of this generous material.</p>
-	</p>
     </section>
     
     <section id="graphene-history">
@@ -111,10 +109,10 @@
     </section>
 
     <section id="why-familiar">
-        <p id="Paragraph2ID">
+
         <h3>Why does the word graphene sound familiar?:</h3>
         <p>Because you've likely heard of its big brother graphite, used to make pencils. Graphite is made up of hundreds of thousands of layers of graphene (Zurutuza, No date). This is why graphene was discovered, not invented, as graphite is a naturally occurring mineral, therefore making graphene also naturally occurring.</p>
-	</p>
+
     </section>
 
     <section id="battery-effects">
@@ -125,28 +123,28 @@
     </section>
 
     <section id="adding-graphene">
-        <p id="Paragraph4Count">
+
         <h3>How to add graphene to batteries:</h3>
         <p>Graphene can be added to a battery in many ways. These include being: </p>
 	<p>	  • Mixed with lithium to create graphene enhanced Li-Ion batteries</p>
 	<p>	  • Fixed to the conductive end of traditional Li-Ion cells to increase conductivity</p>
 	<p>	  • Separately refined into solid state batteries</p>
         <p>	  • Installed around the outside of a battery to act as a heatsink </p>
-    	</p>
+
     </section>
 	
     <section id="use-cases">
-        <p id="Paragraph5Count">
+
         <h3>The use cases:</h3>
         <p>The 3 major battery benefits bestowed by graphene are:</p>
 	<p>	  • Charging speed increases - The very high electrical conductivity of graphene boosts the density of the electrode within the battery, enabling greater power transfer and faster charging speeds with reduced heat (Dam, 2022)</p>
 	<p>	  • Thermal pad and absorption of dissipated heat - Graphene helps spreading heat across a heatsink at rapid speeds, diminishing effects of battery expansion (ScienceDirect, 2024)</p>
         <p>	  • Battery longevity - Graphene batteries have been reported to last about 5 times longer than traditional Lithium-ion batteries (Baker, No date)</p>
-	</p>
+
     </section>
 	
     <section id="table1">
-        <p id="Table1Count">
+
         <h3>Table 1 - Compairing Alkaline, Lithium and Graphene batteries:</h3>
         <table>
 		<tr>
@@ -198,28 +196,28 @@
 			<td>Strong</td>
 		</tr>
 	</table>
-	</p>
+
     </section>
 	
     <section id="future">
-        <p id="Paragraph6Count">
+
         <h3>In the future:</h3>
         <p>Graphene batteries currently suffer from a lower charge capacity when compared to Li-Ion batteries, while being costly. This is why they haven't hit mass production in companies like Tesla, whose electric cars are infamous for having slow charging speeds with low mileage (Sirull, 2024). Future tech devices that rely might see a reduction in thickness, especially when considering the benefits compound effects. The media presents graphene as having no drawbacks. This is misleading; graphene is today what plastic was, when it was first synthesised. Plastic was originally considered a wonder material without any compromises, which today we know is not true, proven by the existence of plastic pollution. (Clegg, 2018)</p>
-	</p>
+
     </section>
 
     <section id="figure1">
-        <p id="Figure1Count">
+
         <h3>Figure 1 - Battery evolution graph:</h3>
 	<img src="Figure1.jpg">
-        </p>
+
     </section>
 	
     <section id="conclusion">
-        <p id="Paragraph7Count">
+
         <h3>Conclusion and my passion:</h3>
         <p>In a world where technological development from big companies, an example being Apple (Duffy 2024), seems to have halted, it is always an amazing sight to see the next big thing unravel in front of our very own eyes. I hope this article helps inspire you to find great ideas to help push our society forward. </p>
-	</p>
+
     </section>
 	
     <section id="references">
@@ -282,16 +280,16 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("IntroductionID");
-    const Paragraph1Count = displayWordCount("Paragraph1ID");
-    const Paragraph2Count = displayWordCount("Paragraph2ID");
-    const Paragraph3Count = displayWordCount("Paragraph3ID");
-    const Paragraph4Count = displayWordCount("Paragraph4ID");
+    const IntroductionCount = displayWordCount("introduction");
+    const Paragraph1Count = displayWordCount("graphene-history");
+    const Paragraph2Count = displayWordCount("why-familiar");
+    const Paragraph3Count = displayWordCount("battery-effects");
+    const Paragraph4Count = displayWordCount("adding-graphene");
     const Paragraph5Count = displayWordCount("use-cases");
-    const Table1Count = displayWordCount("#table1");
-    const Paragraph6Count = displayWordCount("#future");
-    const Figure1Count = displayWordCount("#figure1");
-    const Paragraph7Count = displayWordCount("#conclusion");
+    const Table1Count = displayWordCount("table1");
+    const Paragraph6Count = displayWordCount("future");
+    const Figure1Count = displayWordCount("figure1");
+    const Paragraph7Count = displayWordCount("conclusion");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + Paragraph1Count + Paragraph2Count + Paragraph3Count + Paragraph4Count + Paragraph5Count + Paragraph6Count + Paragraph7Count + Figure1Count + Table1Count;
     // Display the total word count
